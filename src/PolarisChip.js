@@ -14,6 +14,10 @@ export class PolarisChip extends LitElement {
       :host {
         display: inline-block;
         margin: 0 12px 12px 0;
+        text-transform: uppercase;
+        font-style: italic;
+        padding: 12px 16px 12px 24px;
+        font-weight: bold;
       }
 
       .link:hover,
@@ -27,12 +31,17 @@ export class PolarisChip extends LitElement {
       }
       
       .link {
-        font-weight: bold;
         text-decoration: none;
         padding: 8px 4px;
         border: 2px solid #444;
         color: #444;
         font-size: 16px;
+      }
+
+      .primaryOutlined {
+        background-color: #ffffff;
+        border: #005fa9;
+
       }
     `;
   }
