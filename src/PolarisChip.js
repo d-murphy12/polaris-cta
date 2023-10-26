@@ -6,6 +6,7 @@ export class PolarisChip extends LitElement {
       name: { type: String },
       link: { type: String },
       active: { type: Boolean, reflect: true },
+      class: { type: String },
     };
   }
 
@@ -19,29 +20,92 @@ export class PolarisChip extends LitElement {
         padding: 12px 16px 12px 24px;
         font-weight: bold;
       }
+      
+              /*
+                    .link:hover,
+                    :host([active]) .link {
+                      background-color: #e4e5e7;
+                      border: 2px solid #e4e5e7;
+                      border-radius: 2px;
+                      color: #005fa9;
+                      cursor: pointer;
+                      text-decoration: underline;
+                    }
+                    */
+                    /*
+                    .link {
+                      text-decoration: none;
+                      padding: 8px 4px;
+                      border: 2px solid #444;
+                      color: #444;
+                      font-size: 16px;
+                    }
+              */
+      .primaryOutlined {
+        border: 2px solid #005fa9;
+        background-color: #fff;
+        color: #005fa9;
+        padding: 12px 16px 12px 24px;
+        border-radius: 4px;
+      }
 
-      .link:hover,
-      :host([active]) .link {
-        background-color: #e4e5e7;
-        border: 2px solid #e4e5e7;
+        .primaryOutlined:hover,
+      :host([active]) .primaryOutlined {
+        background-color: #005fa9;
+        border: 2px solid #005fa9;
+        border-radius: 2px;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: underline;
+        border-radius: 4px;
+      }
+
+      .primaryFilled {
+        background-color: #005fa9;
+        border: 2px solid #005fa9;
+        padding: 12px 16px 12px 24px;
+        color: #fff;
+        border: 2px solid #005fa9;
+        border-radius: 4px;
+      }
+
+      .primaryFilled:hover,
+      :host([active]) .primaryFilled {
+        background-color: #fff;
+        border: 2px solid #005fa9;
         border-radius: 2px;
         color: #005fa9;
         cursor: pointer;
         text-decoration: underline;
-      }
-      
-      .link {
-        text-decoration: none;
-        padding: 8px 4px;
-        border: 2px solid #444;
-        color: #444;
-        font-size: 16px;
+        border-radius: 4px;
       }
 
-      .primaryOutlined {
-        background-color: #ffffff;
-        border: #005fa9;
+      .tinted {
+        background-color: #005fa9;
+        border: 2px solid #fff;
+        padding: 12px 16px 12px 24px;
+        color: #fff;
+        border: 2px solid #005fa9;
+        opacity: 0.5;
+        border-radius: 4px;
+      }
 
+      .tinted:hover,
+      :host([active]) .tinted {
+        background-color: #fff;
+        border: 2px solid #005fa9;
+        border-radius: 2px;
+        color: #005fa9;
+        cursor: pointer;
+        text-decoration: underline;
+        border-radius: 4px;
+      }
+
+      .lightOutlined {
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 12px 16px 12px 24px;
+        border-radius: 4px;
       }
     `;
   }
@@ -50,9 +114,10 @@ export class PolarisChip extends LitElement {
     super();
     this.name = '';
     this.link = "https://www.psu.edu/news/research/";
+    this.class = '';
   }
 
   render() {
-    return html`<a class="link" href="${this.link}"><slot>${this.name}</slot></span>`;
+    return html`<a class="${this.class}" href="${this.link}"><slot>${this.name}</slot></span>`;
   }
 }
