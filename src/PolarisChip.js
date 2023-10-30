@@ -14,7 +14,7 @@ export class PolarisChip extends LitElement {
     return css`
       :host {
         display: inline-block;
-        margin: 0 12px 12px 0;
+        margin: 12px 12px 12px 12px;
         text-transform: uppercase;
         font-style: italic;
         padding: 12px 16px 12px 24px;
@@ -47,16 +47,17 @@ export class PolarisChip extends LitElement {
         color: #005fa9;
         padding: 12px 16px 12px 24px;
         border-radius: 4px;
+        text-decoration: none;
       }
 
-        .primaryOutlined:hover,
+        .primaryOutlined:hover, .primaryOutlined:focus,
       :host([active]) .primaryOutlined {
         background-color: #005fa9;
         border: 2px solid #005fa9;
         border-radius: 2px;
         color: #fff;
         cursor: pointer;
-        text-decoration: underline;
+        text-decoration: none;
         border-radius: 4px;
       }
 
@@ -67,9 +68,10 @@ export class PolarisChip extends LitElement {
         color: #fff;
         border: 2px solid #005fa9;
         border-radius: 4px;
+        text-decoration: none;
       }
 
-      .primaryFilled:hover,
+      .primaryFilled:hover, 
       :host([active]) .primaryFilled {
         background-color: #fff;
         border: 2px solid #005fa9;
@@ -78,16 +80,18 @@ export class PolarisChip extends LitElement {
         cursor: pointer;
         text-decoration: underline;
         border-radius: 4px;
+        text-decoration: none;
       }
 
       .tinted {
-        background-color: #005fa9;
+        background-color: #1e407c;
         border: 2px solid #fff;
         padding: 12px 16px 12px 24px;
-        color: #fff;
-        border: 2px solid #005fa9;
-        opacity: 0.5;
+        color: #ccf0ff;
+        border: 2px solid #fff;
+        opacity: 0.7;
         border-radius: 4px;
+        text-decoration: none;
       }
 
       .tinted:hover,
@@ -97,17 +101,55 @@ export class PolarisChip extends LitElement {
         border-radius: 2px;
         color: #005fa9;
         cursor: pointer;
-        text-decoration: underline;
+        text-decoration: none;
         border-radius: 4px;
       }
 
       .lightOutlined {
         border: 2px solid #fff;
-        color: #fff;
+        color: #ccf0ff;
         padding: 12px 16px 12px 24px;
         border-radius: 4px;
+        text-decoration: none;
+        background-color: transparent;
       }
+
+      .lightOutlined:hover,
+      :host([active]) .lightOutlined {
+        background-color: #ccf0ff;
+        border: 2px solid #ccf0ff;
+        border-radius: 2px;
+        color: #005fa9;
+        cursor: pointer;
+        text-decoration: underline;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+
+      .lightFilled {
+        border: 2px solid #ccf0ff;
+        color: #1e407c;
+        padding: 12px 16px 12px 24px;
+        border-radius: 4px;
+        text-decoration: none;
+        background-color: #ccf0ff;
+      }
+
+      .lightFilled:hover,
+      :host([active]) .lightFilled {
+        background-color: transparent;
+        border: 2px solid #ccf0ff;
+        border-radius: 2px;
+        color: #ccf0ff;
+        cursor: pointer;
+        text-decoration: underline;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+
+
     `;
+
   }
 
   constructor() {
