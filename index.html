@@ -14,23 +14,61 @@
       padding: 0;
       font-family: sans-serif;
       background-color: #ededed;
-    }
+      }
+
+      .container {
+        margin: 2px;
+        display: flex;
+        background-color: #fff;
+        border: 50px 8px;
+        width: 250px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container-2 {
+        margin: 2px;
+        display: flex;
+        background-color: #E8E8E8;
+        border: 50px 8px;
+        width: 250px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .container-3 {
+        margin: 2px;
+        display: flex;
+        background-color: #041E42;
+        border: 50px 8px;
+        width: 250px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+      }
+
 
   </style>
   <title>polaris-chip</title>
 </head>
 
 <body>
-  <div style="background-color:#fff">
-  <polaris-chip name="primaryOutlined >" class="primaryOutlined"></polaris-chip>
-  <polaris-chip name="primaryFilled" class="primaryFilled"></polaris-chip>
+  <div class="container">
+  <polaris-chip name="SUBSCRIBE" primaryOutlined></polaris-chip>
 </div>
-<div style="background-color:#E8E8E8">
-  <polaris-chip name="tinted" class="tinted"></polaris-chip>
+<div class="container">
+  <polaris-chip name="SUBSCRIBE" primaryFilled></polaris-chip>
 </div>
-    <div style="background-color:#1e407c">
-      <polaris-chip name="lightOutlined" class="lightOutlined"></polaris-chip>
-      <polaris-chip name="lightFilled" class="lightFilled"></polaris-chip>
+<div class="container-2">
+  <polaris-chip name="SUBSCRIBE" tinted></polaris-chip>
+</div>
+    <div class="container-3">
+      <polaris-chip name="SUBSCRIBE" lightOutlined></polaris-chip>
+    </div>
+    <div class="container-3">
+      <polaris-chip name="SUBSCRIBE" lightFilled></polaris-chip>
     </div>
   <script type="module" src="./src/polaris-chip.js"></script>
 </body>
