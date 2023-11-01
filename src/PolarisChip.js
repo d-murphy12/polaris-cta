@@ -47,7 +47,6 @@ export class PolarisChip extends LitElement {
           :host([primaryOutlined]:hover) .link {
             background-color: #005fa9;
             border: 2px solid #005fa9;
-            border-radius: 2px;
             color: #fff;
             cursor: pointer;
             text-decoration: none;
@@ -55,7 +54,6 @@ export class PolarisChip extends LitElement {
           :host([primaryOutlined]:focus) .link {
             background-color: #005fa9;
             border: 2px solid #005fa9;
-            border-radius: 2px;
             color: #fff;
             cursor: pointer;
             text-decoration: none;
@@ -67,27 +65,22 @@ export class PolarisChip extends LitElement {
             border: 2px solid #005fa9;
             padding: 12px 16px 12px 24px;
             color: #fff;
-            border: 2px solid #005fa9;
             text-decoration: none;
           }
 
           :host([primaryFilled]:hover) .link {
             background-color: #fff;
             border: 2px solid #005fa9;
-            border-radius: 2px;
             color: #005fa9;
             cursor: pointer;
-            text-decoration: underline;
             text-decoration: none;
           }
     
           :host([primaryFilled]:focus) .link {
             background-color: #fff;
             border: 2px solid #005fa9;
-            border-radius: 2px;
             color: #005fa9;
             cursor: pointer;
-            text-decoration: underline;
             text-decoration: none;
           }
 
@@ -97,14 +90,12 @@ export class PolarisChip extends LitElement {
         border: 2px solid #fff;
         padding: 12px 16px 12px 24px;
         color: #ccf0ff;
-        border: 2px solid #fff;
         opacity: 0.7;
         text-decoration: none;
       }
       :host([tinted]:hover) .link {
         background-color: #fff;
         border: 2px solid #005fa9;
-        border-radius: 2px;
         color: #005fa9;
         cursor: pointer;
         text-decoration: none;
@@ -113,7 +104,6 @@ export class PolarisChip extends LitElement {
       :host([tinted]:focus) .link {
         background-color: #fff;
         border: 2px solid #005fa9;
-        border-radius: 2px;
         color: #005fa9;
         cursor: pointer;
         text-decoration: none;
@@ -131,20 +121,16 @@ export class PolarisChip extends LitElement {
       :host([lightOutlined]:hover) .link {
         background-color: #ccf0ff;
         border: 2px solid #ccf0ff;
-        border-radius: 2px;
         color: #005fa9;
         cursor: pointer;
-        text-decoration: underline;
         text-decoration: none;
       }
 
       :host([lightOutlined]:focus) .link {
         background-color: #ccf0ff;
         border: 2px solid #ccf0ff;
-        border-radius: 2px;
         color: #005fa9;
         cursor: pointer;
-        text-decoration: underline;
         text-decoration: none;
       }
 
@@ -161,8 +147,6 @@ export class PolarisChip extends LitElement {
         border: 2px solid #ccf0ff;
         color: #ccf0ff;
         cursor: pointer;
-        text-decoration: underline;
-        border-radius: 4px;
         text-decoration: none;
       }
 
@@ -171,8 +155,6 @@ export class PolarisChip extends LitElement {
         border: 2px solid #ccf0ff;
         color: #ccf0ff;
         cursor: pointer;
-        text-decoration: underline;
-        border-radius: 4px;
         text-decoration: none;
       }
     `;
